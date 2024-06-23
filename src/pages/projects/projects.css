@@ -1,0 +1,308 @@
+.hero{
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  flex-grow: 1;
+  width:99vw;
+  /* cursor:text; */
+}
+.hero div{
+  width: 100%;
+  padding-bottom: 150px;
+}
+.hero h2{
+  text-align: center;
+  margin-bottom: 0px;
+  width: 100%;
+  font-size: 70px;
+  color: white;
+}
+.hero h2 span{
+  color: #5ca1ea;
+}
+.hero button{
+  text-align: center;
+  margin: auto;
+  display: block;
+  color: white!important
+}.hero button a{
+  text-align: center;
+  margin: auto;
+  display: block;
+  color: white!important;
+  text-decoration: none;
+}
+.hero h3{
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  margin-top: 5px;
+  color: white;
+}
+.projPageWrap{
+
+}
+
+.cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  /* background-image: url('../../assets/experience_white_background.png'); */
+  background-size: 450px;
+  background-repeat: no-repeat;
+  align-items: stretch;
+  overflow-x: hidden; 
+  position: relative;
+  padding-top: 80px;
+  min-height: 90vh;
+}
+.holderDiv{
+  max-width: 80%;
+  width: 420px;
+  max-width: 100%;
+  margin: 20px;
+}
+.projectsGraphic{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background: blue;
+}
+.btnHolder{
+  position: sticky;
+    top: 0;
+    z-index: 20;
+    background: white;
+    width: 98.4%;
+    padding: 15px;
+
+}
+.skillsContain{
+  padding-left: 20px;
+}
+.hide{
+  display: none;
+}
+.react{
+  background-image: url('../../assets/react.jpg');
+}
+.apollo{
+  background-image: url('../../assets/apollo.jpg');
+}
+.css{
+  background-image: url('../../assets/css.png');
+  background-size: 60%!important;
+  background-repeat: no-repeat;
+
+}
+.js{
+  background-image: url('../../assets/js.png');
+}
+.jwt{
+  background-image: url('../../assets/jwt.png');
+}
+.mongo{
+  background-image: url('../../assets/mongo.png');
+}
+.mongoose{
+  background-image: url('../../assets/mongoose.jpg');
+}
+.node{
+  background-image: url('../../assets/node.png');
+  background-size: 90%!important;
+  background-repeat: no-repeat;
+}
+.stripe{
+  background-image: url('../../assets/stripe.png');
+}
+
+.pwa{
+  background-image: url('../../assets/pwa.png');
+  background-size: contain!important;
+  background-repeat: no-repeat;
+}
+.redux{
+  background-image: url('../../assets/redux.png');
+}
+.seqelize{
+  background-image: url('../../assets/sequelize.png');
+}
+.stripe{
+  background-image: url('../../assets/stripe.png');
+}
+.gql{
+  background-image: url('../../assets/graphql.png');
+}
+.github{
+  background-image: url('../../assets/github.png');
+}
+.git{
+  background-image: url('../../assets/git.jpg');
+  background-size: contain!important;
+  background-repeat: no-repeat;
+}
+.express{
+  background-image: url('../../assets/ex.png');
+}
+.rest{
+  background-image: url('../../assets/rest.png');
+}
+.mysql{
+  background-image: url('../../assets/sql.png');
+  background-size: contain!important;
+  background-repeat: no-repeat;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.spin {
+  animation: spin 2s ease-in-out;
+}
+.skillwrap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.skillcard{
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  width: 230px;
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  background-color: white;
+}
+.skillcard  div {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  opacity: 0;
+  height: 100%;
+  background: rgba(74, 74, 74, 0.603);
+  border-radius: 20px;
+  transition: all .3s ease;
+}
+.skillcard p {
+  text-align: center;
+  /* display: flex; */
+  color: white;
+  margin: auto;
+  width: 90%;
+}
+.skillcard:hover > div{
+  opacity: 1;
+  transition: all .3s ease;
+}
+#about{
+  width: 100%;
+  min-height: 90vh;
+  height: fit-content;
+  padding-top: 90px;
+  color: white!important;
+  display: flex;
+}
+#about div{
+  width: 50%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#about div img{
+  margin-left: auto;
+  margin-right: 100px;
+  display: flex;
+}
+#about div p{
+  text-align: center;
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: 100px;
+  padding-top: 30px;
+  font-size: 20px;
+  text-align: right;
+}
+#res{
+  width: 100%;
+  min-height: 90vh;
+  height: fit-content;
+  padding-top: 130px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+#workContain{
+  width: 100%;
+  height: 95vh;
+  padding-top: 50px;
+}
+#proj{
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+#skillContain{
+  width: 100%;
+  padding-top: 80px;
+}
+.logan{
+  object-fit: cover;
+  width: 400px;
+  height: 500px;
+  border-radius: 25px;
+}
+.resImgContain{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.resImgs{
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+.resImgs:hover{
+  scale: 1.1;
+}
+.resImgContain div p{
+  color: white;
+  font-size: 25px;
+}
+.resPdf{
+  max-height: 700px;
+  object-fit: contain;
+  cursor: pointer;
+  margin-right: 0px;
+  margin-left: auto;
+}
+.m-t-auto{
+  margin-top: auto;
+}
+.m-b-auto{
+  margin-bottom: auto;
+}

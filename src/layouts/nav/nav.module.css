@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.navStyles{
+  background: #151e28;
+  min-width: 14.14vw;
+  width: 250px;
+  margin-right: auto;
+  padding: 0px;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  max-height: 100vh;
+  font-family: "Raleway", sans-serif!important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.navStyles h1{
+  width: 100%;
+  color: white;
+  font-size: 35px;
+  margin-top: 0px;
+}
+.navStyles article{
+  margin:auto;
+}
+.navStyles button{
+  font-family: "Raleway", sans-serif!important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: block;
+  background: white;
+  padding: 15px;
+  color: #151e28;
+  width: 130px;
+  height: 130px;
+  margin: 20px auto 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.navStyles button:hover{
+  cursor: pointer;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 8px 24px;
+}
+.navStyles div{
+  width: 100%; 
+}
+.navStyles img{
+  width: 150px;
+  height: 150px;
+
+  margin: auto;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.navStyles button img{
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 0px!important;
+}

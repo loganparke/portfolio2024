@@ -1,38 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* overflow-x: hidden; */
+  /* ooverflow: hidden; */
+  /* background-image: url('./assets/wbg.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* font-family: "Raleway", sans-serif!important;*/
+  font-family: "Oswald", sans-serif; 
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-
-.App-link {
-  color: #61dafb;
+.backgroundd{
+  width: 99.1vw!important;
+  height: 100vh!important;
+  /* background-color: rgb(255, 224, 129); */
+  position: fixed;
+  top: 0;
+  left: 0; 
 }
+#myVideo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.App section{
+  /* overflow-x: hidden; */
+  /* overflow: hidden; */
+}
+.App .btnStyles:hover > .App #trailer{
+  background-color: blue;
+}
+#trailer{
+  height: 2000px;
+  width: 4000px;
+  border-radius: 100px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 5;
+
+  pointer-events: none;
+  opacity: 1;
+  transition: all 3s ease;
+  transition: transform 1s ease-out; /* Smooth initial animation */
+  will-change: transform;
+  /* background-color: red; */
+}
+.trailerOutBtn{
+  background: radial-gradient(circle, rgba(255, 0, 0, 0), rgba(4, 10, 52, 0.732), rgba(4, 10, 52, 0.937), rgb(4, 10, 52),rgb(4, 10, 52),rgb(4, 10, 52));
+  transition: all 3s ease;
+  
+}
+@keyframes follow-mouse {
   to {
-    transform: rotate(360deg);
+      transform: translate(var(--mouse-x), var(--mouse-y));
   }
+}
+
+/* .trailerInBtn{
+  width: 50px;
+  transition: all 3s ease;
+} */
+.onTop{
+  position: relative!important;
+  z-index: 11!important;
 }

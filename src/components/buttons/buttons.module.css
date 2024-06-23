@@ -1,0 +1,21 @@
+.btnStyles{
+  all: unset;
+  padding: 10px 35px 15px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+}
+.btnStyles:hover{
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.primaryBtn{
+  background: #5ca1ea;
+  color: white;
+}
+.secondaryBtn{
+  background: #f3f3fb;
+  color:black;
+}
