@@ -188,8 +188,8 @@
 
 .btnStyles{
   all: unset;
-  padding: 10px 35px 10px;
-  border-radius: 15px;
+  padding: 15px 45px 15px;
+  border-radius: 4px;
   font-size: 20px;
   font-weight: 500;
   margin: 10px;
@@ -204,7 +204,7 @@
   transition: all .3s ease;
 }
 .primaryBtn{
-  background: #5ca1ea;
+  background: #4b6bb5;
   color: white;
 }
 .secondaryBtn{
