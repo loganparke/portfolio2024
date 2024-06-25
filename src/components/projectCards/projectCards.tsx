@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import './projectCards.css';
 import tbLogo from '../../assets/tbLogo.png';
 import benlabs from '../../assets/benlabs.png';
-import benimg from '../../assets/benImg.png'
+import benimg from '../../assets/benImg.jpg'
 import tbRedesign from '../../assets/tbRedesign.webp'
 import vacanze from '../../assets/vacanze.png'
 import stripe from '../../assets/stripe.png'

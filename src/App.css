@@ -30,9 +30,9 @@
   /* overflow-x: hidden; */
   /* overflow: hidden; */
 }
-.App .btnStyles:hover > .App #trailer{
+/* .App .btnStyles:hover > .App #trailer{
   background-color: blue;
-}
+} */
 #trailer{
   height: 2000px;
   width: 4000px;

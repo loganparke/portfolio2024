@@ -3,14 +3,14 @@ import './projects.css'
 import { ProjectCards } from '../../components/projectCards/projectCards';
 import info from '../../assets/info.png'
 import TrailerComponent from '../../components/trailer/trailer';
-import video from '../../assets/video2.mp4'
+import video from '../../assets/video1.mp4'
 import logan from '../../assets/logan.jpg'
 import linkedin from '../../assets/linkedin.png'
 import gitHub from '../../assets/github.png'
 import resPdf from '../../assets/Logan Parke Resume_DRAFT.pdf'
 import resPic from '../../assets/resPic.png'
 import vacanze from '../../assets/Dark-preview.png'
-import benPic from '../../assets/benImg.png'
+import benPic from '../../assets/benImg.jpg'
 import TB from '../../assets/tbRedesign.webp'
 
 import { Button } from '../../components/buttons/button';
@@ -30,7 +30,58 @@ function Projects() {
   let resBtn = useRef<HTMLButtonElement>(null);
   let aboutS = useRef<HTMLDivElement>(null);
   let resS = useRef<HTMLDivElement>(null);
+  let testS = useRef<HTMLDivElement>(null);
   let scroolToSect = useRef<HTMLDivElement>(null);
+
+  let test1 = useRef<HTMLDivElement>(null);
+  let test2 = useRef<HTMLDivElement>(null);
+  let test3 = useRef<HTMLDivElement>(null);
+  let test4 = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if(test1.current?.classList.contains('pos1')){
+        test1.current.classList.remove('pos1')
+        test1.current.classList.add('pos2')
+        test2.current?.classList.remove('pos2')
+        test2.current?.classList.add('pos3')
+        test3.current?.classList.remove('pos3')
+        test3.current?.classList.add('pos4')
+        test4.current?.classList.remove('pos4')
+        test4.current?.classList.add('pos1')
+      } else if(test1.current?.classList.contains('pos2')){
+        test1.current.classList.remove('pos2')
+        test1.current.classList.add('pos3')
+        test2.current?.classList.remove('pos3')
+        test2.current?.classList.add('pos4')
+        test3.current?.classList.remove('pos4')
+        test3.current?.classList.add('pos1')
+        test4.current?.classList.remove('pos1')
+        test4.current?.classList.add('pos2')
+      } else if(test1.current?.classList.contains('pos3')){
+        test1.current.classList.remove('pos3')
+        test1.current.classList.add('pos4')
+        test2.current?.classList.remove('pos4')
+        test2.current?.classList.add('pos1')
+        test3.current?.classList.remove('pos1')
+        test3.current?.classList.add('pos2')
+        test4.current?.classList.remove('pos2')
+        test4.current?.classList.add('pos3')
+      } else if(test1.current?.classList.contains('pos4')){
+        test1.current.classList.remove('pos4')
+        test1.current.classList.add('pos1')
+        test2.current?.classList.remove('pos1')
+        test2.current?.classList.add('pos2')
+        test3.current?.classList.remove('pos2')
+        test3.current?.classList.add('pos3')
+        test4.current?.classList.remove('pos3')
+        test4.current?.classList.add('pos4')
+      }
+    }, 5000);
+
+    // Cleanup function to clear the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, []);
 
   const [navClick, setNavClick] = useState(false)
 
@@ -122,7 +173,7 @@ function Projects() {
   }
 
   const scrollToSection = (sect: any) => {
-    console.log(sect.current.id)
+
     switch(sect.current.id){
       case 'home':
         if (home.current) {
@@ -182,7 +233,6 @@ function Projects() {
   const callback = (entries: IntersectionObserverEntry[]) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        console.log(entry.target.id)
         switch(entry.target.id){
           case 'workContain':
             changeSection('work');
@@ -304,7 +354,6 @@ function Projects() {
   }, [resS, options]);
 
 
-// console.log(bgVideo)
   return (
     <div className='projPageWrap'>
       <div className='backgroundd'>
@@ -382,7 +431,7 @@ function Projects() {
         className='btnStyles secondaryBtn onTop' >Resume & Contact Info</button>
       </section>
       
-      <article id='workContain' ref={work}>
+      <article id='workContain' className=' onTop' ref={work}>
         <section className='experience onTop'>
           <div>
           <img src={vacanze} />
@@ -391,15 +440,19 @@ function Projects() {
             <h2>Vacanze</h2>
             <h3>Founder & CEO</h3>
             <h4>January 2023 - Current</h4>
-            <article>As the founder of Vacanze, I have been responsible for the development and implementation of all aspects of the business. My day-to-day responsibilities include designing and developing the web application using technologies such as React, Node.js, and MongoDB, as well as integrating with third-party APIs, such as GoogleMaps API and Stripe Payments API, to provide additional functionality. I also manage the hosting and deployment of the application using heroku. In addition to my technical responsibilities, I am responsible for managing the business operations of the company, including customer acquisition and retention, marketing and advertising, and financial management.</article>
+            <article>As the founder of Vacanze, I have been responsible for the development and implementation of all aspects of the business. My day-to-day responsibilities include designing and developing the web application using technologies such as React, Node.js, and MongoDB, as well as connecting the applicaiton with third-party integrations, such as GoogleMaps API and Stripe Payments, to provide additional functionality. I also manage the hosting and deployment of the application using heroku. In addition to my technical responsibilities, I am responsible for managing the business operations of the company, including customer acquisition and retention, marketing and advertising, and financial management.<br/>
+            <a href='https://www.vacanzeguides.com/'>Check out Vacanze HERE</a>
+            </article>
           </div>
         </section>
-        <section className='experience onTop'>
+        <section className='experience onTop wave1'>
         <div>
             <h2>TubeBuddy</h2>
-            <h3>Front-End Developer</h3>
-            <h4>January 2023 - Current</h4>
-            <article>As a Front-End Developer, I am responsible for creating quality UX/UI interfaces using HTML, CSS, and JavaScript along with Wordpress and Shopify. I integrate our site with various API endpoints, from our own database and backend, along with ChatGPT and other 3rd party integrations. I build tests to track conversions on our website to optimize web traffic and increase revenue. I collaborated design and marketing teams, as well as back-end developers, to connect webpages to our backend and to optimize SEO performance.</article>
+            <h3 className='blackText'>Front-End Developer</h3>
+            <h4 className='blackText'>January 2023 - Current</h4>
+            <article>As a Front-End Developer, I am responsible for creating quality UX/UI interfaces using HTML, CSS, and JavaScript along with Wordpress and Shopify. I integrate our site with various API endpoints, from our own database and backend, to with ChatGPT and other 3rd party integrations. I build tests to track conversions on our website to optimize web traffic and increase revenue. I collaborate design and marketing teams, as well as back-end developers, to build pages and components from figma files, connect webpages to our backend, and to optimize SEO performance.<br/>
+            <a className='redText' href='https://www.tubebuddy.com/'>Check out TubeBuddy HERE</a>
+            </article>
           </div>
           <div>
           <img src={TB} />
@@ -413,49 +466,27 @@ function Projects() {
             <h2>BENlabs</h2>
             <h3>Front-End Developer</h3>
             <h4>January 2023 - Current</h4>
-            <article>As a Front-End Developer, I am responsible for creating quality UX/UI interfaces using HTML, CSS, and JavaScript along with Wordpress and Shopify. I integrate our site with various API endpoints, from our own database and backend, along with ChatGPT and other 3rd party integrations. I build tests to track conversions on our website to optimize web traffic and increase revenue. I collaborated design and marketing teams, as well as back-end developers, to connect webpages to our backend and to optimize SEO performance.</article>
+            <article>As a Front-End Developer, I am responsible for creating quality UX/UI interfaces using HTML, CSS, and JavaScript along with Wordpress and Shopify. I integrate our site with various API endpoints, from our own database and backend, to with ChatGPT and other 3rd party integrations. I build tests to track conversions on our website to optimize web traffic and increase revenue. I collaborate design and marketing teams, as well as back-end developers, to build pages and components from figma files, connect webpages to our backend, and to optimize SEO performance.<br/>
+            <a href='https://www.benlabs.com/'>Check out BEnlabs HERE</a>
+            </article>
           </div>
         </section>
 
-      {/* <section className='cardsContainer'>
-      <div className='workCard'></div>
-      <ProjectCards 
-      company='TubeBuddy' 
-      position='Front-End Developer' 
-      description='Front-End Developer' 
-      graphic='tbRedesign' 
-      details='As a Front-End Developer, I am responsible for creating quality UX/UI interfaces using HTML, CSS, and JavaScript along with Wordpress and Shopify. I integrate our site with various API endpoints, from our own database and backend, along with ChatGPT and other 3rd party integrations. I build tests to track conversions on our website to optimize web traffic and increase revenue. I collaborated design and marketing teams, as well as back-end developers, to connect webpages to our backend and to optimize SEO performance.' />
-      <ProjectCards 
-      company='BENlabs' 
-      position='Front-End Developer' 
-      description='Front-End Developer' 
-      graphic='benRedesign' 
-      details='As a Front-End Developer, I am responsible for creating quality UX/UI interfaces using HTML, CSS, and JavaScript along with Wordpress and Shopify. I integrate our site with various API endpoints, from our own database and backend, along with ChatGPT and other 3rd party integrations. I build tests to track conversions on our website to optimize web traffic and increase revenue. I collaborated design and marketing teams, as well as back-end developers, to connect webpages to our backend and to optimize SEO performance.' />
-      <ProjectCards 
-      company='Vacanze' 
-      position='Founder & CEO' 
-      description='Founder of Vacanze <br> Full-Stack Developer' 
-      graphic='vacanzeBeach' 
-      details='As the founder of Vacanze, I have been responsible for the development and implementation of all aspects of the business. My day-to-day responsibilities include designing and developing the web application using technologies such as React, Node.js, and MongoDB, as well as integrating with third-party APIs, such as GoogleMaps API and Stripe Payments API, to provide additional functionality. I also manage the hosting and deployment of the application using heroku. In addition to my technical responsibilities, I am responsible for managing the business operations of the company, including customer acquisition and retention, marketing and advertising, and financial management.' />
-      </section> */}
       </article>
       
-      <article id='proj' ref={projects}>
+      <article id='proj' className='onTop' ref={projects}>
       <section className='cardsContainer'>
-      {/* <div className='projectsGraphic'></div> */}
-      {/* <div className='holderDiv'></div> */}
-      <ProjectCards company='TubeBuddy' position='Front-end Developer' description='Built "AI Agents" interactive AI chatbot for YouTubers' graphic='ai' details='Build "AI Agents" for TubeBuddy, these agents are all separate chat bots with specific rolls on your "AI Team".  You supply the agents with your YouTube channel and they do the rest.  From generating video ideas, to the title and description of the video, and much more. Check it out yourself <a href="https://www.tubebuddy.com/ai/agents/">HERE</a>' />
+      <ProjectCards company='TubeBuddy' position='Front-end Developer' description='Built "AI Agents" interactive AI chatbot for YouTubers' graphic='ai' details='Build "AI Agents" for TubeBuddy, these agents are all separate chat bots with specific rolls on your "AI Team".  You supply the agents with your YouTube channel and they do the rest.  From generating video ideas, to the title and description of the video, and much more.<a href="https://www.tubebuddy.com/ai/agents/"> Check it out yourself HERE</a>' />
       <ProjectCards company='TubeBuddy' position='Front-end Developer' description='Fully redesigned and implemented new TubeBuddy website' graphic='tbRedesign' details='Redesigned and implemented an entire new site for TubeBuddy.  I worked with marketers, designers, and back-end developers to reshape our brand and functionality.  We increased users and revenue year over year by close to 20% each.' />
       <ProjectCards company='BENlabs' position='Front-end Developer' description='Implemented new designs, landing pages, and nav bar on BENlabs website' graphic='benRedesign' details='Implemented new designs, landing pages, and nav bar on BENlabs website' />
       <ProjectCards company='Vacanze' position='Founder & CEO' description='Integrated Vacanze with Stripe as the payment stack' graphic='stripe' details='Build entire Vacanze payment stack with Stripe.  Stipe has built in subscription models that work in most cases, I could not use those in my specific case.  i built a new subscription model from scratch.  Using webhooks, users are billed monthly or yearly based on the reccuring subscription that they choose.  If a user does not pay, then their subscription is cancelled.  Or they can cancel themselves.' />
       <ProjectCards company='Vacanze' position='Founder & CEO' description='Built fully customizable GoogleMaps integration' graphic='googleMap' details='Built a custom Google Maps integration for Vacanze.  Users are able to create custom locations on their app that they build with Vacanze. The locations that are marked can be anything from parks, to churches, to restaurants.  Each has its own type of map marker as well to destinguish between the types.  This is mostly done through geo-coding addresses or by choosing the latittude and longitude of the location you want to mark.' />
       <ProjectCards company='Vacanze' position='Founder & CEO' description='Made Vacanze into a dynamic downloadable PWA website' graphic='guideFull' details='Made Vacanze into a dymanic pwa application so that Airbnb hosts can share the guide to their property with guests staying there on vacation.  Guests can then view the guide in their mobile browser, or download the guide to their homescreen.  The host can customize the app icon, color, and name to match the brand and identity of their home.' />
       <ProjectCards company='TubeBuddy' position='Front-end Developer' description='Performed SEO audits and improved website performace/Google Lighthouse scores' graphic='score' details='Performed SEO audits to maximize our organic traffic, focus on keywords, and improve site quality.  I also improved our website performace by simplifiying our DOM, implementing best practices, and removing unused javascript and css files that were being loaded onto every page of the website even when they were not being used.' />
+      <ProjectCards company='Vacanze' position='Founder & CEO' description='Designed & built entire product' graphic='vacanzeBeach' details='Build & designed full product.  From database design/management, to Backend and Frontend design/management.  <a href="https://www.vacanzeguides.com/user/63d9d428f366de6c77a3f86c/guide/6429d1e99590aabaa72cadae" target="_blank">Check out an example HERE</a>' />
       </section>
       </article>
-      <article id='skill' className=' skillsContain' ref={skills}>
-        <h2>Skills</h2>
-
+      <article id='skill' className='onTop skillsContain' ref={skills}>
         <div id='skillContain' className='skillwrap onTop'>
           <article className='react skillcard'>
             <div>
@@ -532,11 +563,6 @@ function Projects() {
               <p>Profficient with Git & Github.</p>
             </div>
           </article>
-          {/* <article className='git skillcard'>
-            <div>
-              <p>Profficient with Git & Github.</p>
-            </div>
-          </article> */}
           <article className='express skillcard onTop'>
             <div>
               <p>I have used express on many applications to create a REST API along with Node.js</p>
@@ -557,12 +583,44 @@ function Projects() {
       <section id='about' ref={aboutS} className='onTop'>
         <div>
           <img className='logan' src={logan}/>
-          <p>
-            I Graduated from Weber State University with an associates degree in Management Information Systems and have a coding certificate from the University of Utah Coding Bootcamp. <br/><br/>I Love rock climbing, skiing, fly fishing, playing hockey, and of course, software development!
-          </p>
+          
           </div>
-          <div></div>
+          <div><p>
+            I Graduated from Weber State University with an associates degree in Management Information Systems and have a coding certificate from the University of Utah Coding Bootcamp. <br/><br/>I Love rock climbing, skiing, fly fishing, playing hockey, and of course, software development!
+          </p></div>
       </section>
+      <section  id='test' ref={testS} className='onTop'>
+      <div>
+            <article className='test pos1' ref={test1}>
+              <img src={linkedin}/>
+              <p>TubeBuddy makes getting results
+              on YouTube so much easier</p>
+              <h5>Cole Noel</h5>
+              <h6>Colleauge</h6>
+            </article>
+            <article className='test pos2' ref={test2}>
+              <img src={linkedin}/>
+              <p>TubeBuddy makes getting results
+              on YouTube so much easier</p>
+              <h5>Kyle Colquitt</h5>
+              <h6>Colleauge</h6>
+            </article>
+            <article className='test pos3' ref={test3}>
+              <img src={linkedin}/>
+              <p>TubeBuddy makes getting results
+              on YouTube so much easier</p>
+              <h5>Dan Butler</h5>
+              <h6>Colleauge</h6>
+            </article>
+            <article className='test pos4' ref={test4}>
+              <img src={linkedin}/>
+              <p>TubeBuddy makes getting results
+              on YouTube so much easier</p>
+              <h5>Alex Snow</h5>
+              <h6>Colleauge</h6>
+            </article>
+          </div>
+          </section>
       <section id='res' ref={resS} className='onTop'>
         <div className='resImgContain'>
         <img onClick={() => window.open(resPdf, '_blank', 'noopener,noreferrer')} className='resPdf' src={resPic} />

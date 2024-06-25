@@ -57,6 +57,7 @@
   position: relative;
   padding-top: 80px;
   min-height: 90vh;
+  background: rgb(4, 10, 52);
 }
 .holderDiv{
   max-width: 80%;
@@ -81,6 +82,7 @@
 }
 .skillsContain{
   padding-left: 20px;
+  background: rgb(4, 10, 52);
 }
 .hide{
   display: none;
@@ -179,6 +181,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 40px;
+  background: rgb(4, 10, 52);
 }
 .skillcard{
   display: flex;
@@ -218,9 +221,10 @@
   width: 100%;
   min-height: 100vh;
   height: fit-content;
-  padding-top: 90px;
+  padding-top: 40px;
   color: white!important;
   display: flex;
+  background: rgb(4, 10, 52);
 }
 #about div{
   width: 50%;
@@ -236,14 +240,96 @@
   display: flex;
 }
 #about div p{
-  text-align: center;
+  text-align: left;
   width: 80%;
   display: flex;
   margin-left: auto;
   margin-right: 100px;
   padding-top: 30px;
   font-size: 20px;
-  text-align: right;
+  /* text-align: right; */
+}
+#test{
+  min-height: 90vh;
+  background: rgb(4, 10, 52);
+  padding-top: 0;
+  display: flex;
+  /* flex-direction: column;*/
+  align-items: center; 
+}
+#test div{
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+}
+.test{
+  background-image: url('../../assets/quote.png');
+  background-size: 90%;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border: 2px solid rgb(174, 174, 174);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 350px;
+  height: 360px;
+  margin: auto;
+}
+.test img{
+  border-radius: 100%;
+  object-fit: contain;
+  display: flex;
+  margin: auto!important;
+  width: 130px;
+}
+.test p{
+  margin-left: auto!important;
+  width: 300px!important;
+  font-size: 23px!important;
+}
+.test h5{
+  margin: auto;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+.test h6{
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #888888;
+}
+.pos1{
+  position: absolute;
+  z-index: 400;
+  left: 15%;
+  scale: .9;
+  transition: all .4s ease;
+}
+.pos2{
+  position: absolute;
+  left: 40%;
+  z-index: 500;
+  scale: 1.1;
+  transition: all .4s ease;
+}
+.pos3{
+  position: absolute;
+  left: 65%;
+  z-index: 400;
+  scale: .9;
+  transition: all .4s ease;
+}
+.pos4{
+  position: absolute;
+  z-index: 300;
+  left: 40%;
+  scale: .8;
+  transition: all .4s ease;
 }
 #res{
   width: 100%;
@@ -253,24 +339,32 @@
   display: flex;
   justify-content: space-around;
   margin: auto;
+  background: rgb(4, 10, 52);
 }
 #workContain{
   width: 100%;
   min-height: 95vh;
   padding-top: 100px;
+  background: rgb(4, 10, 52);
+  align-items: center;
+
 }
 .experience{
 display: flex;
 flex-wrap: wrap;
 color: white;
-width: 85%;
+width: 100%;
+justify-content: center;
 margin: auto;
-padding: 60px;
+padding-top: 60px;
+padding-bottom: 60px;
+/* background: rgb(4, 10, 52); */
 }
 .experience div{
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
+
 }
 .experience div h2{
   font-size: 40px;
@@ -285,13 +379,16 @@ padding: 60px;
 .experience div h4{
   font-size: 20px;
   margin: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #e7e7e7;
   font-weight: 400;
 }
 .experience div article{
   font-size: 22px;
   width: 90%;
+}
+.experience div article a{
+  color: aqua;
 }
 .experience div img{
   max-width: 700px;
@@ -305,10 +402,17 @@ padding: 60px;
   width: 100%;
   padding-bottom: 50px;
   padding-top: 50px;
+  background: rgb(4, 10, 52);
+}
+#skill{
+  background: rgb(4, 10, 52);
+  margin-top: -30px;
+  padding-top: 50px;
 }
 #skillContain{
   width: 100%;
   padding-top: 80px;
+  background: rgb(4, 10, 52);
 }
 .logan{
   object-fit: cover;
@@ -351,4 +455,20 @@ padding: 60px;
 }
 .m-b-auto{
   margin-bottom: auto;
+}
+.wave1{
+  background-image: url('../../assets/wave1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.blackText{
+  color: black!important;
+  font-weight: 700!important;
+}
+.redText{
+  color: rgb(255, 0, 0)!important;
+  font-weight: 700!important; 
 }
