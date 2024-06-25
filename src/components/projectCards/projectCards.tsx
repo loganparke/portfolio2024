@@ -107,7 +107,7 @@ export const ProjectCards: React.FC<CardProps> = ({ company, position, descripti
           <br />
           <p>{ position }</p>
         </h1>
-        <img className='logoImg' src={ imgSrc }/>
+        <img className='logoImg' src={ imgSrc } alt='imgs'/>
       </header>
       <section dangerouslySetInnerHTML={{ __html: description }}>
         

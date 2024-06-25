@@ -13,24 +13,24 @@ function Nav() {
       <h1>Logan Parke</h1>
       <article>
       <button>
-        <img className='btnImg' src={home} />
+        <img className='btnImg' src={home} alt='imgs'/>
         Home
       </button>
       <button>
-      <img className='btnImg' src={chart} />
+      <img className='btnImg' src={chart} alt='imgs'/>
         Work History & Projects
       </button>
       <button>
-      <img className='btnImg' src={user} />
+      <img className='btnImg' src={user} alt='imgs'/>
         About Me
       </button>
       <button>
-      <img className='btnImg' src={file} />
+      <img className='btnImg' src={file} alt='imgs'/>
         Resume & Contact Info
       </button>
       </article>
       <div>
-      <a href='https://www.linkedin.com/in/logan-parke/' target='_blank'><img src={logan} /></a>
+      <a href='https://www.linkedin.com/in/logan-parke/' target='_blank'><img src={logan} alt='imgs'/></a>
       </div>
     </nav>
   )

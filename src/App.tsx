@@ -1,12 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import './App.css';
-import Home from './pages/home/home';
 import Projects from './pages/projects/projects';
-import TrailerComponent from './components/trailer/trailer';
-import { Button } from './components/buttons/button';
-import Nav from './layouts/nav/nav';
-
-import TrailerContext from './components/trailer/trailerContext';
 
 
 function App() {

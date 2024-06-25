@@ -434,7 +434,7 @@ function Projects() {
       <article id='workContain' className=' onTop' ref={work}>
         <section className='experience onTop'>
           <div>
-          <img src={vacanze} />
+          <img src={vacanze}  alt='img'/>
           </div>
           <div>
             <h2>Vacanze</h2>
@@ -455,12 +455,12 @@ function Projects() {
             </article>
           </div>
           <div>
-          <img src={TB} />
+          <img src={TB} alt='img'/>
           </div>
         </section>
         <section className='experience onTop'>
           <div>
-          <img src={benPic} />
+          <img src={benPic}  alt='img'/>
           </div>
           <div>
             <h2>BENlabs</h2>
@@ -582,7 +582,7 @@ function Projects() {
       </article>
       <section id='about' ref={aboutS} className='onTop'>
         <div>
-          <img className='logan' src={logan}/>
+          <img className='logan' src={logan} alt='imgs'/>
           
           </div>
           <div><p>
@@ -592,28 +592,28 @@ function Projects() {
       <section  id='test' ref={testS} className='onTop'>
       <div>
             <article className='test pos1' ref={test1}>
-              <img src={linkedin}/>
+              <img src={linkedin} alt='imgs'/>
               <p>TubeBuddy makes getting results
               on YouTube so much easier</p>
               <h5>Cole Noel</h5>
               <h6>Colleauge</h6>
             </article>
             <article className='test pos2' ref={test2}>
-              <img src={linkedin}/>
+              <img src={linkedin} alt='imgs'/>
               <p>TubeBuddy makes getting results
               on YouTube so much easier</p>
               <h5>Kyle Colquitt</h5>
               <h6>Colleauge</h6>
             </article>
             <article className='test pos3' ref={test3}>
-              <img src={linkedin}/>
+              <img src={linkedin} alt='imgs'/>
               <p>TubeBuddy makes getting results
               on YouTube so much easier</p>
               <h5>Dan Butler</h5>
               <h6>Colleauge</h6>
             </article>
             <article className='test pos4' ref={test4}>
-              <img src={linkedin}/>
+              <img src={linkedin} alt='imgs'/>
               <p>TubeBuddy makes getting results
               on YouTube so much easier</p>
               <h5>Alex Snow</h5>
@@ -623,13 +623,13 @@ function Projects() {
           </section>
       <section id='res' ref={resS} className='onTop'>
         <div className='resImgContain'>
-        <img onClick={() => window.open(resPdf, '_blank', 'noopener,noreferrer')} className='resPdf' src={resPic} />
+        <img onClick={() => window.open(resPdf, '_blank', 'noopener,noreferrer')} className='resPdf' src={resPic} alt='imgs'/>
           <p>talk</p>
           </div>
         <div className='resImgContain'>
           <div className='m-t-auto'>
-          <a href='https://www.linkedin.com/in/logan-parke/' target='_blank'><img className='resImgs' src={linkedin}/></a>
-          <a href='https://github.com/loganparke' target='_blank'><img className='resImgs' src={gitHub}/></a>
+          <a href='https://www.linkedin.com/in/logan-parke/' target='_blank'><img className='resImgs' src={linkedin} alt='imgs'/></a>
+          <a href='https://github.com/loganparke' target='_blank'><img className='resImgs' src={gitHub} alt='imgs'/></a>
           </div>
           <div className='m-b-auto'>
             <p>Email: LoganParke14@outlook.com</p>
