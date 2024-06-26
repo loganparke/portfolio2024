@@ -5,6 +5,12 @@ import info from '../../assets/info.png'
 import TrailerComponent from '../../components/trailer/trailer';
 import video from '../../assets/video1.mp4'
 import logan from '../../assets/logan.jpg'
+import logan1 from '../../assets/logan1.jpg'
+import logan2 from '../../assets/logan2.jpg'
+import logan3 from '../../assets/logan3.jpg'
+import logan4 from '../../assets/logan4.jpg'
+import logan5 from '../../assets/logan5.jpg'
+import logan6 from '../../assets/logan6.jpg'
 import linkedin from '../../assets/linkedin.png'
 import gitHub from '../../assets/github.png'
 import resPdf from '../../assets/Logan Parke Resume_DRAFT.pdf'
@@ -626,10 +632,15 @@ function Projects() {
         </div>
       </article>
       <section id='about' ref={aboutS} className='onTop'>
-        <div>
-          <img className='logan' src={logan} alt='imgs'/>
-          
-          </div>
+        <div className='loganWrap'>
+          <img className='logan l1' src={logan} alt='imgs'/>
+          <img className='logan l2' src={logan1} alt='imgs'/>
+          <img className='logan l3' src={logan2} alt='imgs'/>
+          <img className='logan l4' src={logan3} alt='imgs'/>
+          <img className='logan l5' src={logan4} alt='imgs'/>
+          <img className='logan l6' src={logan5} alt='imgs'/>
+          <img className='logan l7' src={logan6} alt='imgs'/>
+        </div>
           <div><p>
             I Graduated from Weber State University with an associates degree in Management Information Systems and have a coding certificate from the University of Utah Coding Bootcamp. <br/><br/>I Love rock climbing, skiing, fly fishing, playing hockey, and of course, software development!
           </p></div>

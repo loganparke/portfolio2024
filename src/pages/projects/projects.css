@@ -225,9 +225,10 @@
   color: white!important;
   display: flex;
   background: rgb(4, 10, 52);
+  justify-content: center;
 }
 #about div{
-  width: 50%;
+  max-width: 800px;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -249,6 +250,51 @@
   font-size: 20px;
   /* text-align: right; */
 }
+.loganWrap{
+  display: grid!important;
+  grid-template-columns: 3;
+  grid-template-rows: 6;
+  max-width: 650px!important;
+  padding-top: 200px;
+  padding-top: -100px;
+}
+.logan{
+  max-width: 200px;
+  max-height: 250px;
+  object-fit:cover;
+  margin: 0px!important;
+  margin-bottom: 30px!important;
+  margin-right: 30px!important;
+}
+.l1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.l2{
+  position: relative;
+  top: -100px;
+}
+.l5{
+  position: relative;
+  top: -100px;
+}
+.l6{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  position: relative;
+  top: -100px;
+}
+.l7{
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 #test{
   min-height: 90vh;
   background: rgb(4, 10, 52);
