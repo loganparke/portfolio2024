@@ -27,6 +27,7 @@ function Projects() {
   let projBtn = useRef<HTMLButtonElement>(null);
   let skillBtn = useRef<HTMLButtonElement>(null);
   let aboutBtn = useRef<HTMLButtonElement>(null);
+  let testBtn = useRef<HTMLButtonElement>(null);
   let resBtn = useRef<HTMLButtonElement>(null);
   let aboutS = useRef<HTMLDivElement>(null);
   let resS = useRef<HTMLDivElement>(null);
@@ -96,6 +97,7 @@ function Projects() {
         workBtn.current?.classList.remove('primaryBtn')
         homeBtn.current?.classList.remove('secondaryBtn')
         homeBtn.current?.classList.add('primaryBtn')
+        testBtn.current?.classList.remove('primaryBtn')
 
         // if (home.current && navClick == true) {
         //   scrollToSection('home')
@@ -109,6 +111,7 @@ function Projects() {
         aboutBtn.current?.classList.remove('primaryBtn')
         resBtn.current?.classList.remove('primaryBtn')
         workBtn.current?.classList.add('primaryBtn')
+        testBtn.current?.classList.remove('primaryBtn')
 
         // if (work.current && navClick == true) {
         //   scrollToSection('work')
@@ -122,6 +125,7 @@ function Projects() {
         aboutBtn.current?.classList.remove('primaryBtn')
         resBtn.current?.classList.remove('primaryBtn')
         skillBtn.current?.classList.add('primaryBtn')
+        testBtn.current?.classList.remove('primaryBtn')
 
         // if (skills.current && navClick == true) {
         //   scrollToSection('skill')
@@ -135,6 +139,7 @@ function Projects() {
         aboutBtn.current?.classList.remove('primaryBtn')
         resBtn.current?.classList.remove('primaryBtn')
         projBtn.current?.classList.add('primaryBtn')
+        testBtn.current?.classList.remove('primaryBtn')
 
         // if (projects.current && navClick == true) {
         //   scrollToSection('project')
@@ -149,10 +154,18 @@ function Projects() {
         aboutBtn.current?.classList.add('primaryBtn')
         resBtn.current?.classList.remove('primaryBtn')
         projBtn.current?.classList.remove('primaryBtn')
-
-        // if (aboutS.current && navClick == true) {
-        //   scrollToSection('about')
-        // }
+        testBtn.current?.classList.remove('primaryBtn')
+        break;
+      case 'test':
+        homeBtn.current?.classList.remove('primaryBtn')
+        workBtn.current?.classList.remove('primaryBtn')
+        skillBtn.current?.classList.remove('primaryBtn')
+        projBtn.current?.classList.remove('primaryBtn')
+        aboutBtn.current?.classList.remove('primaryBtn')
+        resBtn.current?.classList.remove('primaryBtn')
+        projBtn.current?.classList.remove('primaryBtn')
+        testBtn.current?.classList.add('primaryBtn')
+        testBtn.current?.classList.remove('secondaryBtn')
         break;
       case 'res':
         homeBtn.current?.classList.remove('primaryBtn')
@@ -163,6 +176,7 @@ function Projects() {
         resBtn.current?.classList.add('primaryBtn')
         resBtn.current?.classList.remove('secondaryBtn')
         projBtn.current?.classList.remove('primaryBtn')
+        testBtn.current?.classList.remove('primaryBtn')
 
         // if (resS.current) {
         //   scrollToSection('res')
@@ -205,6 +219,12 @@ function Projects() {
         setNavClick(false)
         }
         break;
+      case 'test':
+        if (testS.current) {
+          testS.current?.scrollIntoView({ behavior: 'smooth', block: "start" });
+          setNavClick(false)
+          }
+          break;
       case 'res':
         if (resS.current) {
         resS.current?.scrollIntoView({ behavior: 'smooth' });
@@ -242,6 +262,9 @@ function Projects() {
             break;
           case 'about':
             changeSection('about');
+            break;
+          case 'test':
+            changeSection('test');
             break;
           case 'skill':
             changeSection('skill');
@@ -341,6 +364,20 @@ function Projects() {
   useEffect(() => {
     if(navClick != true){
       const observer = new IntersectionObserver(callback, options);
+      if (testS.current) {
+        observer.observe(testS.current);
+      }
+      // setNavClick(false)
+      return () => {
+        if (testS.current) {
+          observer.unobserve(testS.current);
+        }
+      };
+    }
+  }, [testS, options]);
+  useEffect(() => {
+    if(navClick != true){
+      const observer = new IntersectionObserver(callback, options);
       if (resS.current) {
         observer.observe(resS.current);
       }
@@ -421,6 +458,14 @@ function Projects() {
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
         className='btnStyles secondaryBtn onTop' >About Me</button>
+        <button ref={testBtn} onClick={() => {
+          // setNavClick(true)
+          scrollToSection(testS)
+          // changeSection('about')
+        }}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+        className='btnStyles secondaryBtn onTop' >Testimonials</button>
       <button  ref={resBtn} onClick={() => {
           // setNavClick(true)
           scrollToSection(resS)
@@ -593,31 +638,27 @@ function Projects() {
       <div>
             <article className='test pos1' ref={test1}>
               <img src={linkedin} alt='imgs'/>
-              <p>TubeBuddy makes getting results
-              on YouTube so much easier</p>
-              <h5>Cole Noel</h5>
-              <h6>Colleauge</h6>
+              <p>Quote goes here Quote goes here</p>
+              <h5>Name</h5>
+              <h6>work relation</h6>
             </article>
             <article className='test pos2' ref={test2}>
               <img src={linkedin} alt='imgs'/>
-              <p>TubeBuddy makes getting results
-              on YouTube so much easier</p>
-              <h5>Kyle Colquitt</h5>
-              <h6>Colleauge</h6>
+              <p>Quote goes here Quote goes here</p>
+              <h5>Name</h5>
+              <h6>work relation</h6>
             </article>
             <article className='test pos3' ref={test3}>
               <img src={linkedin} alt='imgs'/>
-              <p>TubeBuddy makes getting results
-              on YouTube so much easier</p>
-              <h5>Dan Butler</h5>
-              <h6>Colleauge</h6>
+              <p>Quote goes here Quote goes here</p>
+              <h5>Name</h5>
+              <h6>work relation</h6>
             </article>
             <article className='test pos4' ref={test4}>
               <img src={linkedin} alt='imgs'/>
-              <p>TubeBuddy makes getting results
-              on YouTube so much easier</p>
-              <h5>Alex Snow</h5>
-              <h6>Colleauge</h6>
+              <p>Quote goes here Quote goes here</p>
+              <h5>Name</h5>
+              <h6>work relation</h6>
             </article>
           </div>
           </section>
