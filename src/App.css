@@ -128,4 +128,13 @@
   margin-top: 20px;
   order: 1;
 }
+.hero{
+  width: auto!important;
+}
+.backgroundd{
+  width: auto!important;
+}
+.projPageWrap{
+  /* width: 100vw!important; */
+}
 }
