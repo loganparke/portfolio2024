@@ -13,7 +13,7 @@ import logan5 from '../../assets/logan5.jpg'
 import logan6 from '../../assets/logan6.jpg'
 import linkedin from '../../assets/linkedin.png'
 import gitHub from '../../assets/github.png'
-import resPdf from '../../assets/Logan Parke Resume_DRAFT.pdf'
+import resPdf from '../../assets/Resume.pdf'
 import resPic from '../../assets/resPic.png'
 import vacanze from '../../assets/Dark-preview.png'
 import benPic from '../../assets/benImg.jpg'
@@ -645,7 +645,7 @@ function Projects() {
             I Graduated from Weber State University with an associates degree in Management Information Systems and have a coding certificate from the University of Utah Coding Bootcamp. <br/><br/>I Love rock climbing, skiing, fly fishing, playing hockey, and of course, software development!
           </p></div>
       </section>
-      <section  id='test' ref={testS} className='onTop hide'>
+      <section  id='test' ref={testS} className='onTop'>
       <div>
             <article className='test pos1' ref={test1}>
               <img src={linkedin} alt='imgs'/>
