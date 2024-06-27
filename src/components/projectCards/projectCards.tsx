@@ -118,12 +118,14 @@ export const ProjectCards: React.FC<CardProps> = ({ company, position, descripti
       <div>
       <button ref={ backX } onClick={handleFlip}>X</button>
       <p dangerouslySetInnerHTML={{ __html: details }}></p>
+      <section>
       <img className='footerlogoImg' src={ imgSrc }/>
       <h1 className='footerH1'>
           { company }
           <br />
           <p>{ position }</p>
         </h1>
+        </section>
       </div>
     </footer>
     </section>

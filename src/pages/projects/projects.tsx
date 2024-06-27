@@ -3,7 +3,7 @@ import './projects.css'
 import { ProjectCards } from '../../components/projectCards/projectCards';
 import info from '../../assets/info.png'
 import TrailerComponent from '../../components/trailer/trailer';
-import video from '../../assets/video1.mp4'
+import video from '../../assets/video2.mp4'
 import logan from '../../assets/logan.jpg'
 import logan1 from '../../assets/logan1.jpg'
 import logan2 from '../../assets/logan2.jpg'
@@ -513,7 +513,7 @@ function Projects() {
             <h2>BENlabs</h2>
             <h3>Front-End Developer</h3>
             <h4>January 2023 - Current</h4>
-            <article>As a Front-End Developer, I am responsible for creating quality UX/UI interfaces using HTML, CSS, and JavaScript along with Wordpress and Shopify. I integrate our site with various API endpoints, from our own database and backend, to with ChatGPT and other 3rd party integrations. I build tests to track conversions on our website to optimize web traffic and increase revenue. I collaborate design and marketing teams, as well as back-end developers, to build pages and components from figma files, connect webpages to our backend, and to optimize SEO performance.<br/>
+            <article>Worked as a designer and WordPress devloper.  Created landing pages, redesigned nav bar, performed A/B tests to track converstions, and optimized web & SEO performance.<br/>
             <a href='https://www.benlabs.com/'>Check out BEnlabs HERE</a>
             </article>
           </div>
