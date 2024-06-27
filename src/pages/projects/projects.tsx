@@ -464,18 +464,14 @@ function Projects() {
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
         className='btnStyles secondaryBtn onTop' >About Me</button>
-        <button ref={testBtn} onClick={() => {
-          // setNavClick(true)
+        {/* <button ref={testBtn} onClick={() => {
           scrollToSection(testS)
-          // changeSection('about')
         }}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        className='btnStyles secondaryBtn onTop' >Testimonials</button>
+        className='btnStyles secondaryBtn onTop' >Testimonials</button> */}
       <button  ref={resBtn} onClick={() => {
-          // setNavClick(true)
           scrollToSection(resS)
-          // changeSection('res')
         }} 
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
@@ -645,7 +641,7 @@ function Projects() {
             I Graduated from Weber State University with an associates degree in Management Information Systems and have a coding certificate from the University of Utah Coding Bootcamp. <br/><br/>I Love rock climbing, skiing, fly fishing, playing hockey, and of course, software development!
           </p></div>
       </section>
-      <section  id='test' ref={testS} className='onTop'>
+      <section  id='test' ref={testS} className='onTop hide'>
       <div>
             <article className='test pos1' ref={test1}>
               <img src={linkedin} alt='imgs'/>
@@ -676,7 +672,6 @@ function Projects() {
       <section id='res' ref={resS} className='onTop'>
         <div className='resImgContain'>
         <img onClick={() => window.open(resPdf, '_blank', 'noopener,noreferrer')} className='resPdf' src={resPic} alt='imgs'/>
-          <p>talk</p>
           </div>
         <div className='resImgContain'>
           <div className='m-t-auto'>
