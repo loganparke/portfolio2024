@@ -645,7 +645,7 @@ function Projects() {
             I Graduated from Weber State University with an associates degree in Management Information Systems and have a coding certificate from the University of Utah Coding Bootcamp. <br/><br/>I Love rock climbing, skiing, fly fishing, playing hockey, and of course, software development!
           </p></div>
       </section>
-      <section  id='test' ref={testS} className='onTop'>
+      <section  id='test' ref={testS} className='onTop hide'>
       <div>
             <article className='test pos1' ref={test1}>
               <img src={linkedin} alt='imgs'/>

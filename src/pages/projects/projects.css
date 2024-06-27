@@ -85,7 +85,7 @@
   background: rgb(4, 10, 52);
 }
 .hide{
-  display: none;
+  display: none!important;
 }
 .react{
   background-image: url('../../assets/react.jpg');
@@ -517,3 +517,4 @@ padding-bottom: 60px;
   color: rgb(255, 0, 0)!important;
   font-weight: 700!important; 
 }
+
