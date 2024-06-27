@@ -480,10 +480,10 @@ function Projects() {
       
       <article id='workContain' className=' onTop' ref={work}>
         <section className='experience onTop'>
-          <div>
+          <div className='order2'>
           <img src={vacanze}  alt='img'/>
           </div>
-          <div>
+          <div className='order1'>
             <h2>Vacanze</h2>
             <h3>Founder & CEO</h3>
             <h4>January 2023 - Current</h4>
@@ -506,10 +506,10 @@ function Projects() {
           </div>
         </section>
         <section className='experience onTop'>
-          <div>
+          <div  className='order2'>
           <img src={benPic}  alt='img'/>
           </div>
-          <div>
+          <div className='order1'>
             <h2>BENlabs</h2>
             <h3>Front-End Developer</h3>
             <h4>January 2023 - Current</h4>

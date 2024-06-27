@@ -69,3 +69,63 @@
   position: relative!important;
   z-index: 11!important;
 }
+
+@media only screen and (max-width: 1150px) {
+#about{
+  display: flex;
+  flex-wrap: wrap;
+}
+#about div{
+  width: 100%;
+}
+#about div p{
+  text-align: center;
+}
+.cardsContainer{
+  justify-content: center;
+}
+.btnHolder{
+  display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#res{
+  display: flex;
+  flex-wrap: wrap;
+}
+.resPdf{
+  height: 550px;
+  margin: auto!important;
+}
+.resImgContain{
+  width: 100%!important;
+  margin-bottom: 40px;
+}
+.resImgContain div{
+  display: flex;
+  justify-content: center;
+}
+.experience{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.experience div{
+  width: 90%!important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.experience div img{
+  display: flex;
+  margin: auto;
+}
+.order1{
+  order: 0;
+}
+.order2{
+  margin-top: 20px;
+  order: 1;
+}
+}
