@@ -267,6 +267,24 @@
   margin-bottom: 30px!important;
   margin-right: 30px!important;
 }
+@media only screen and (max-width: 1150px) {
+  .loganWrap{
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+.logan{
+  width: 100px!important;
+  height: 150px!important;
+  margin-right: 0px!important;
+}
+#about div:last-child{
+  padding: 20px;
+}
+#about div p{
+  width: 100%!important;
+  margin-right: 0px!important;
+}
+}
 .l1{
   grid-column-start: 1;
   grid-column-end: 2;
