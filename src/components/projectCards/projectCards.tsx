@@ -96,10 +96,10 @@ export const ProjectCards: React.FC<CardProps> = ({ company, position, descripti
   <div ref={cardWrap} className='cardWrap onTop'>
     
     <section className='cardContainer'>
-    <article ref={frontSide}>
+    <article id='frontSide' onClick={handleFlip} ref={frontSide}>
     
       <header>
-        <div ref={toolWrap} onClick={handleFlip} className='toolWrap'>
+        <div ref={toolWrap}  className='toolWrap'>
         <img className='infoImg' src={ info } />
         </div> 
         <h1 className='cardContainerH1'>

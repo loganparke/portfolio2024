@@ -17,6 +17,9 @@
   backdrop-filter: blur(8px); 
   position: relative;
 }
+#frontSide{
+  cursor: pointer;
+}
 .cardContainer article header{
   display: flex;
   width: 420px;
