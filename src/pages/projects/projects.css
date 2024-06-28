@@ -20,13 +20,12 @@
   color: white;
 }
 .hero h2 span{
-  color: #7ba0f7;
+  color: #00eeff;
 }
 .hero button{
   text-align: center;
   margin: auto;
   display: block;
-  color: white!important
 }.hero button a{
   text-align: center;
   margin: auto;
