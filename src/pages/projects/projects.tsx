@@ -464,12 +464,6 @@ function Projects() {
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
         className='btnStyles secondaryBtn onTop' >About Me</button>
-        {/* <button ref={testBtn} onClick={() => {
-          scrollToSection(testS)
-        }}
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-        className='btnStyles secondaryBtn onTop' >Testimonials</button> */}
       <button  ref={resBtn} onClick={() => {
           scrollToSection(resS)
         }} 
@@ -485,7 +479,7 @@ function Projects() {
           </div>
           <div className='order1'>
             <h2>Vacanze</h2>
-            <h3>Founder & CEO</h3>
+            <h3>Founder</h3>
             <h4>January 2023 - Current</h4>
             <article>As the founder of Vacanze, I have been responsible for the development and implementation of all aspects of the business. My day-to-day responsibilities include designing and developing the web application using technologies such as React, Node.js, and MongoDB, as well as connecting the applicaiton with third-party integrations, such as GoogleMaps API and Stripe Payments, to provide additional functionality. I also manage the hosting and deployment of the application using heroku. In addition to my technical responsibilities, I am responsible for managing the business operations of the company, including customer acquisition and retention, marketing and advertising, and financial management.<br/>
             <a href='https://www.vacanzeguides.com/'>Check out Vacanze HERE</a>
@@ -526,11 +520,11 @@ function Projects() {
       <ProjectCards company='TubeBuddy' position='Front-end Developer' description='Built "AI Agents" interactive AI chatbot for YouTubers' graphic='ai' details='Build "AI Agents" for TubeBuddy, these agents are all separate chat bots with specific rolls on your "AI Team".  You supply the agents with your YouTube channel and they do the rest.  From generating video ideas, to the title and description of the video, and much more.<a href="https://www.tubebuddy.com/ai/agents/"> Check it out yourself HERE</a>' />
       <ProjectCards company='TubeBuddy' position='Front-end Developer' description='Fully redesigned and implemented new TubeBuddy website' graphic='tbRedesign' details='Redesigned and implemented an entire new site for TubeBuddy.  I worked with marketers, designers, and back-end developers to reshape our brand and functionality.  We increased users and revenue year over year by close to 20% each.' />
       <ProjectCards company='BENlabs' position='Front-end Developer' description='Implemented new designs, landing pages, and nav bar on BENlabs website' graphic='benRedesign' details='Implemented new designs, landing pages, and nav bar on BENlabs website' />
-      <ProjectCards company='Vacanze' position='Founder & CEO' description='Integrated Vacanze with Stripe as the payment stack' graphic='stripe' details='Build entire Vacanze payment stack with Stripe.  Stipe has built in subscription models that work in most cases, I could not use those in my specific case.  i built a new subscription model from scratch.  Using webhooks, users are billed monthly or yearly based on the reccuring subscription that they choose.  If a user does not pay, then their subscription is cancelled.  Or they can cancel themselves.' />
-      <ProjectCards company='Vacanze' position='Founder & CEO' description='Built fully customizable GoogleMaps integration' graphic='googleMap' details='Built a custom Google Maps integration for Vacanze.  Users are able to create custom locations on their app that they build with Vacanze. The locations that are marked can be anything from parks, to churches, to restaurants.  Each has its own type of map marker as well to destinguish between the types.  This is mostly done through geo-coding addresses or by choosing the latittude and longitude of the location you want to mark.' />
-      <ProjectCards company='Vacanze' position='Founder & CEO' description='Made Vacanze into a dynamic downloadable PWA website' graphic='guideFull' details='Made Vacanze into a dymanic pwa application so that Airbnb hosts can share the guide to their property with guests staying there on vacation.  Guests can then view the guide in their mobile browser, or download the guide to their homescreen.  The host can customize the app icon, color, and name to match the brand and identity of their home.' />
+      <ProjectCards company='Vacanze' position='Founder' description='Integrated Vacanze with Stripe as the payment stack' graphic='stripe' details='Build entire Vacanze payment stack with Stripe.  Stipe has built in subscription models that work in most cases, I could not use those in my specific case.  i built a new subscription model from scratch.  Using webhooks, users are billed monthly or yearly based on the reccuring subscription that they choose.  If a user does not pay, then their subscription is cancelled.  Or they can cancel themselves.' />
+      <ProjectCards company='Vacanze' position='Founder' description='Built fully customizable GoogleMaps integration' graphic='googleMap' details='Built a custom Google Maps integration for Vacanze.  Users are able to create custom locations on their app that they build with Vacanze. The locations that are marked can be anything from parks, to churches, to restaurants.  Each has its own type of map marker as well to destinguish between the types.  This is mostly done through geo-coding addresses or by choosing the latittude and longitude of the location you want to mark.' />
+      <ProjectCards company='Vacanze' position='Founder' description='Made Vacanze into a dynamic downloadable PWA website' graphic='guideFull' details='Made Vacanze into a dymanic pwa application so that Airbnb hosts can share the guide to their property with guests staying there on vacation.  Guests can then view the guide in their mobile browser, or download the guide to their homescreen.  The host can customize the app icon, color, and name to match the brand and identity of their home.' />
       <ProjectCards company='TubeBuddy' position='Front-end Developer' description='Performed SEO audits and improved website performace/Google Lighthouse scores' graphic='score' details='Performed SEO audits to maximize our organic traffic, focus on keywords, and improve site quality.  I also improved our website performace by simplifiying our DOM, implementing best practices, and removing unused javascript and css files that were being loaded onto every page of the website even when they were not being used.' />
-      <ProjectCards company='Vacanze' position='Founder & CEO' description='Designed & built entire product' graphic='vacanzeBeach' details='Build & designed full product.  From database design/management, to Backend and Frontend design/management.  <a href="https://www.vacanzeguides.com/user/63d9d428f366de6c77a3f86c/guide/6429d1e99590aabaa72cadae" target="_blank">Check out an example HERE</a>' />
+      <ProjectCards company='Vacanze' position='Founder' description='Designed & built entire product' graphic='vacanzeBeach' details='Build & designed full product.  From database design/management, to Backend and Frontend design/management.  <a href="https://www.vacanzeguides.com/user/63d9d428f366de6c77a3f86c/guide/6429d1e99590aabaa72cadae" target="_blank">Check out an example HERE</a>' />
       </section>
       </article>
       <article id='skill' className='onTop skillsContain' ref={skills}>
