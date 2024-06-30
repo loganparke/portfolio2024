@@ -441,7 +441,6 @@ function Projects() {
         className='btnStyles primaryBtn onTop'>Work Experience</button>
       <button ref={projBtn} 
       onClick={() => {
-        // setNavClick(true)
         scrollToSection(projects)
       }} 
       onMouseOver={handleMouseOver}
