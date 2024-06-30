@@ -449,7 +449,6 @@ function Projects() {
         onMouseOut={handleMouseOut}
         className='btnStyles secondaryBtn onTop' >Projects</button>
       <button ref={skillBtn} onClick={() => {
-          // setNavClick(true)
           scrollToSection(skills)
         }} 
         onMouseOver={handleMouseOver}
