@@ -434,7 +434,6 @@ function Projects() {
       <button ref={workBtn} onClick={() => {
           // setNavClick(true) 
           scrollToSection(work)
-          // changeSection('work')
         }} 
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
