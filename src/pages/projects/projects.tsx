@@ -443,7 +443,6 @@ function Projects() {
       onClick={() => {
         // setNavClick(true)
         scrollToSection(projects)
-        // changeSection('project')
       }} 
       onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
