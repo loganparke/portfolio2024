@@ -402,7 +402,6 @@ function Projects() {
       <div className='backgroundd'>
         <video muted loop id="myVideo"src={video} 
         // width={640} 
-        // height={360} 
         autoPlay
         controls={false}
         style={{ display: 'block' }}
