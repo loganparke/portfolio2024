@@ -401,7 +401,6 @@ function Projects() {
     <div className='projPageWrap'>
       <div className='backgroundd'>
         <video muted loop id="myVideo"src={video} 
-        // width={640} 
         autoPlay
         controls={false}
         style={{ display: 'block' }}
