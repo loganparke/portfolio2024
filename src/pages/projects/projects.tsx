@@ -424,7 +424,6 @@ function Projects() {
       </section>
       <section ref={scroolToSect} id='work' className='btnHolder'>
       <button ref={homeBtn} onClick={() =>{
-          // setNavClick(true) 
           scrollToSection(home)
         }} 
         onMouseOver={handleMouseOver}
