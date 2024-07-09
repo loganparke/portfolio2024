@@ -290,7 +290,7 @@ function Projects() {
   const options: IntersectionObserverInit = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.1 // Adjust threshold for more frequent intersection detection
+    threshold: 0.1
   };
   
   useEffect(() => {
