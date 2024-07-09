@@ -245,7 +245,6 @@ function Projects() {
   //   if (sectionRef.current) {
   //     sectionRef.current.scrollIntoView({ behavior: 'smooth' });
   //   }
-  // };
 
   const trailerRef = useRef<HTMLDivElement | null>(null);
   const handleMouseOver = () => {
