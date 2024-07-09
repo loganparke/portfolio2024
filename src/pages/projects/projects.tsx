@@ -315,7 +315,6 @@ function Projects() {
       if (home.current) {
         observer.observe(home.current);
       }
-      // setNavClick(false)
       return () => {
         if (home.current) {
           observer.unobserve(home.current);
