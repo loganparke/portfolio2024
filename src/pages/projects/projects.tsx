@@ -344,7 +344,6 @@ function Projects() {
       if (projects.current) {
         observer.observe(projects.current);
       }
-      // setNavClick(false)
       return () => {
         if (projects.current) {
           observer.unobserve(projects.current);
