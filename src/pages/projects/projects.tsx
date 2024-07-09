@@ -300,7 +300,6 @@ function Projects() {
         observer.observe(work.current);
       }
       // setNavClick(false)
-      // Cleanup observer on component unmount
       return () => {
         if (work.current) {
           observer.unobserve(work.current);
