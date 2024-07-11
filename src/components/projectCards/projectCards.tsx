@@ -13,6 +13,7 @@ import info from '../../assets/info.png';
 import vacanzeBig from '../../assets/Dark-preview.png'
 import guideFull from '../../assets/guideFull.png'
 
+
 type CardProps = {
   company: string,
   position: string,
