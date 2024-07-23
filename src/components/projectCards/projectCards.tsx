@@ -92,6 +92,7 @@ export const ProjectCards: React.FC<CardProps> = ({ company, position, descripti
       break;
   } 
   
+  
   return (
   <div ref={cardWrap} className='cardWrap onTop'>
     
